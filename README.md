@@ -1,5 +1,7 @@
 # Ig
 
+## Working instagram basic display Oauth implementation, with posts fetching
+
 To start your Phoenix server:
 
   * Setup the project with `mix setup`
