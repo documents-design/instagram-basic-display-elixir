@@ -2,6 +2,22 @@
 
 ## Working instagram basic display Oauth implementation, with posts fetching
 
+Things mostly happen in those files : 
+
+[InstagramAgent : responsible for most of the work](https://github.com/documents-design/instagram-basic-display-elixir/blob/master/lib/ig/instagram_agent.ex)  
+[InstagramScheduler : refreshes posts and tokens](https://github.com/documents-design/instagram-basic-display-elixir/blob/master/lib/ig/instagram_scheduler.ex)  
+[InstagramPost : converts responses to a struct](https://github.com/documents-design/instagram-basic-display-elixir/blob/master/lib/ig/instagram_post.ex)  
+
+The controller exposes those routes :
+
+`/api/instagram/start_authorization` gives you the URL to trigger the Oauth modal   
+`/api/instagram/authorize` is the Oauth callback URL  
+`/api/instagram/posts` is the list of posts in json  
+
+Feel free to reuse & adapt.
+
+## Phoenix doc
+
 To start your Phoenix server:
 
   * Setup the project with `mix setup`

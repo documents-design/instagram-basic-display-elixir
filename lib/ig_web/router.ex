@@ -25,6 +25,7 @@ defmodule IgWeb.Router do
     scope "/instagram", IgWeb do
       get "/authorize", InstagramController, :authorize
       get "/start_authorization", InstagramController, :start_authorization
+      get "/posts", InstagramController, :posts
     end
   end
 
